@@ -9,7 +9,7 @@ source:
   sha256: 309174667814bade37a5b826d08444411b25b0dfc53e98c7350670d90d153568
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - hdf5
     - libboost-devel
-    - eigen >=3.3
+    - eigen <3.4
     - sundials >=5.5.0,<6
     - nanoflann ==1.5.5
     - nlopt
@@ -38,7 +38,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - hdf5
     - libboost-devel
-    - eigen >=3.3
+    - eigen <3.4
     - sundials >=5.5.0,<6
     - nanoflann ==1.5.5
     - nlopt
